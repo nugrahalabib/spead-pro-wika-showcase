@@ -1,8 +1,8 @@
 <!-- Showcase repository: the product is real and in use, its source code is private. -->
 
-<a href="https://pro.spead.ai"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg"><img src="assets/banner-light.svg" width="100%" alt="Spead AI Pro for WIKA. An AI workspace for the tender and contract team: fills the review form, and every quote is checked."></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg"><img src="assets/banner-light.svg" width="100%" alt="Spead AI Pro for Wijaya Karya. An AI workspace for the tender and contract team: fills the review form, and every quote is checked."></picture>
 
-<p align="center"><a href="https://pro.spead.ai"><b>Open pro.spead.ai</b></a> · <a href="https://github.com/nugrahalabib">More of my work</a> · <a href="https://nugrahalabib.com">nugrahalabib.com</a> · <a href="mailto:nugrahalabib@gmail.com">Email</a></p>
+<p align="center"><a href="https://github.com/nugrahalabib">More of my work</a> · <a href="https://nugrahalabib.com">nugrahalabib.com</a> · <a href="mailto:nugrahalabib@gmail.com">Email</a></p>
 
 <p align="center"><a href="#the-business">The business</a> · <a href="#product-tour">Product tour</a> · <a href="#for-developers">For developers</a></p>
 
@@ -16,16 +16,16 @@ Around that core sits a full workspace: a knowledge library with access rights a
 
 | | |
 | --- | --- |
-| **Status** | Pilot at [pro.spead.ai](https://pro.spead.ai) |
+| **Status** | Pilot |
 | **Role** | Built and led by Nugraha Labib Mujaddid as Founder & Lead AI Engineer of Spead AI, deployed for the EPCC Division of PT Wijaya Karya. |
 | **Period** | Since Oct 2026 |
 | **Source** | Private. This repository presents the product; the code is not published. |
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/features-dark.svg"><img src="assets/features-light.svg" width="100%" alt="What Spead AI Pro for WIKA does: Tender review form, Verified quotes, PDF and Office reading, Cited Q&A, Knowledge library, Document Studio, Connectors with approval, SSO, 2FA and quotas."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/features-dark.svg"><img src="assets/features-light.svg" width="100%" alt="What Spead AI Pro for Wijaya Karya does: Tender review form, Verified quotes, PDF and Office reading, Cited Q&A, Knowledge library, Document Studio, Connectors with approval, SSO, 2FA and quotas."></picture>
 
 ## The business
 
-Spead AI Pro is the Spead AI deployment for the tender and contract team of the EPCC Division at PT Wijaya Karya (Persero) Tbk, live at pro.spead.ai. It reads a tender package, fills the tender document review form (Lampiran 2.3) with quotes that are checked against the contract files, and answers questions about the same package with citations. Around that core sits a full workspace: a knowledge library with access labels and confidentiality, Document Studio with an ONLYOFFICE editor and company templates, connectors where any data change waits for a person, an organisation model and usage quotas. It was built and led by Nugraha Labib Mujaddid as Founder & Lead AI Engineer of Spead AI.
+Spead AI Pro is the Spead AI deployment for the tender and contract team of the EPCC Division at PT Wijaya Karya (Persero) Tbk. It reads a tender package, fills the tender document review form (Lampiran 2.3) with quotes that are checked against the contract files, and answers questions about the same package with citations. Around that core sits a full workspace: a knowledge library with access labels and confidentiality, Document Studio with an ONLYOFFICE editor and company templates, connectors where any data change waits for a person, an organisation model and usage quotas. It was built and led by Nugraha Labib Mujaddid as Founder & Lead AI Engineer of Spead AI.
 
 ### The problem
 
@@ -55,9 +55,9 @@ Contract documents are confidential. Each employee's assistant must read only wh
 
 ### Model and status
 
-Spead AI Pro is a deployment of Spead AI for one organisation: the workspace, assistants and data belong to the WIKA EPCC Division, while Spead AI builds and operates the product. The tender review module is switched on per company as a package, so the same product can run for organisations that do not need it.
+Spead AI Pro is a deployment of Spead AI for one organisation: the workspace, assistants and data belong to the Wijaya Karya EPCC Division, while Spead AI builds and operates the product. The tender review module is switched on per company as a package, so the same product can run for organisations that do not need it.
 
-Status: pilot since October 2026, at pro.spead.ai. The workspace was demonstrated to the tender and contract team with fictional demo cases, and the review form, quote checking and package Q&A are the core of the pilot. Every name, project and number in this showcase is synthetic.
+Status: pilot since October 2026. The workspace was demonstrated to the tender and contract team with fictional demo cases, and the review form, quote checking and package Q&A are the core of the pilot. Every name, project and number in this showcase is synthetic.
 
 ## Product tour
 
@@ -251,7 +251,7 @@ Knowledge search is hybrid: BM25 keyword search plus vector search with e5-small
 
 Each employee has their own assistant. Assistant tools (search knowledge, get a document, compare documents, list and run connectors, create schedules, save memory) call back into the API with an HMAC-SHA256 signature and a one-time nonce, and run with the rights of the employee who owns the assistant.
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg"><img src="assets/architecture-light.svg" width="100%" alt="How Spead AI Pro for WIKA is built."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg"><img src="assets/architecture-light.svg" width="100%" alt="How Spead AI Pro for Wijaya Karya is built."></picture>
 
 ### Data model
 
@@ -288,7 +288,7 @@ Each employee has their own assistant. Assistant tools (search knowledge, get a 
 
 ### Deployment and operations
 
-Runs on a Linux server under systemd with nginx, behind a CDN, at pro.spead.ai; the previous address redirects permanently.
+Runs on a Linux server under systemd with nginx, behind a CDN; the previous address redirects permanently.
 
 The ONLYOFFICE document server runs in a rootless container on its own subdomain.
 
@@ -313,7 +313,7 @@ Daily encrypted backups; database migrations are tested on a copy before each re
 
 ### Built with
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><img src="assets/stack-light.svg" width="100%" alt="Spead AI Pro for WIKA stack."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><img src="assets/stack-light.svg" width="100%" alt="Spead AI Pro for Wijaya Karya stack."></picture>
 
 ### Engineering highlights
 
@@ -323,13 +323,13 @@ Daily encrypted backups; database migrations are tested on a copy before each re
 - Connector credentials sit in an AES-GCM vault, outbound traffic goes through an SSRF guard, and data-changing actions need human approval.
 - On a synthetic test set of 16 documents and 45 queries, Recall@5 rose from 0.867 with keyword search to 0.933 with hybrid search and reranking.
 
----
-
-<sub>Built by [Nugraha Labib Mujaddid](https://github.com/nugrahalabib). This page describes a private codebase; questions about the product or a demo are welcome at [nugrahalabib@gmail.com](mailto:nugrahalabib@gmail.com).</sub>
-
 ## Related
 
 - [Spead AI](https://github.com/nugrahalabib/spead-ai-showcase)
-- [HC Platform for WIKA EPCC](https://github.com/nugrahalabib/wika-hc-platform-showcase)
-- [Q-NEXUS for WIKA EPCC](https://github.com/nugrahalabib/wika-q-nexus-showcase)
+- [HC Platform for Wijaya Karya](https://github.com/nugrahalabib/wika-hc-platform-showcase)
+- [Q-NEXUS for Wijaya Karya](https://github.com/nugrahalabib/wika-q-nexus-showcase)
 - [All my work on GitHub](https://github.com/nugrahalabib)
+
+---
+
+<sub>Built by [Nugraha Labib Mujaddid](https://github.com/nugrahalabib). This page describes a private codebase; questions about the product or a demo are welcome at [nugrahalabib@gmail.com](mailto:nugrahalabib@gmail.com).</sub>
